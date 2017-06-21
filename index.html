@@ -1,0 +1,134 @@
+---
+title: Vin¢ Production
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Vin¢ Production</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <script type="text/javascript" src="{{ "assets/js/script.js" | relative_url }}"></script>
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper container main-column">
+      <a href="testpage.html" class="logo container">
+        <span class="logo__img"></span>
+        <h1 class="logo__text">Vin¢ Production</h1>
+      </a>
+      <nav class="nav">
+        <ul id="menu" class="nav__menu">
+          <li><a class="nav__menu__item" href="#music">Music</a></li>
+          <li><a class="nav__menu__item" href="#events">Events</a></li>
+          <li><a class="nav__menu__item" href="#bio">Bio</a></li>
+          <li><a class="nav__menu__item" href="#contact">Contact</a></li>
+        </ul>
+        <div id="menu-button" class="hamburger"><span/></div>
+      </nav>
+    </div>
+  </header>
+  <div class="parallax-hero"></div>
+  <main class="main-column">
+    <img> </img>
+    <div class="container container--responsive container--align-titles">
+      <section id="music" class="music container__item">
+        <header><h2>Music</h2></header>
+        <hr>
+        <div>
+          <div>
+            <h3>Original Music</h3>
+            <iframe class="iframe" width="100%" height="160" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/djvinnyp/bgml-booty-got-me-loco-vin-feat-c-rod&amp;auto_play=false&amp;buying=false&amp;liking=true&amp;download=false&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=true&amp;show_user=true&amp;hide_related=false&amp;visual=false&amp;start_track=0&amp;callback=true"></iframe>
+          </div>
+          <div>
+            <h3>Mixes</h3>
+            <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fvincent-martin6%2Fmarch-madness-mix-2017-vin%2F&hide_cover=1&mini=1&light=1" frameborder="0"></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="events" class="events container__item">
+        <header><h2>Events</h2></header>
+        <hr>
+        <div>
+          <div>
+            <div class="event">
+              <time class="event__date">June TBD</time>
+              <div class="event__loc">
+                <a class="event__venue">Abigail</a>
+                <a class="small-link">map</a>
+                <span>Hermosa&nbsp;Beach</span>
+              </div>
+              <span class="event__time">9pm</span>
+            </div>
+            <div class="event">
+              <time class="event__date">Sept 30</time>
+              <div class="event__loc">
+                <a class="event__venue">Abigail</a>
+                <a class="small-link">map</a>
+                <span>Hermosa&nbsp;Beach</span>
+              </div>
+              <span class="event__time">12pm</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="subheader">Recent</h3>
+            <div class="event event--past">
+              <time class="event__date" datetime="2017-01-16T20:00">Jan 16</time>
+              <div class="event__loc">
+                <a class="event__venue" href="https://www.kingharborbrewing.com/tasting-room/">King&nbsp;Harbor&nbsp;Brewing Waterfront&nbsp;Tasting&nbsp;Room</a>
+                <a class="small-link">map</a>
+                <span>Redondo&nbsp;Beach</span>
+              </div>
+              <span class="event__time">8pm</span>
+            </div>
+            <div class="event event--past">
+              <time class="event__date" datetime="2017-01-16T20:00">Jan 16</time>
+              <div class="event__loc">
+                <a class="event__venue" href="https://www.kingharborbrewing.com/tasting-room/">King&nbsp;Harbor&nbsp;Brewing Waterfront&nbsp;Tasting&nbsp;Room</a>
+                <a class="small-link">map</a>
+                <span>Redondo&nbsp;Beach</span>
+              </div>
+              <span class="event__time">8pm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bio" class="bio container__item">
+        <header><h2>Bio</h2></header>
+        <hr>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio 
+          laborum natus vero dolores quibusdam nobis cupiditate, fugit in 
+          cumque, necessitatibus neque delectus expedita animi reiciendis a 
+          magni saepe dicta eos.
+        </article>
+      </section>
+    </div>
+  </main>
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <ul>
+      <li>
+        <img></img>
+        Facebook
+      </li>
+      <li>
+        <img></img>
+        Email
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <div class="footer-wrapper main-column">
+      <small class="copyright">© 2017 Vincent Martin</small>
+    </div>
+  </footer>
+</body>
+</html>

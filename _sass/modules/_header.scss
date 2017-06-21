@@ -1,0 +1,115 @@
+.hamburger {
+  border: 1px solid $text-light;
+  border-radius: 5px;
+  content: "";
+  display: none;
+  height: 50px;
+  position: relative;
+  width: 50px;
+
+  span,
+  span::before,
+  span::after
+  {
+    background: $text-light;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 2rem;
+  }
+
+  span::before {
+    bottom: 12px;
+  }
+
+  span::after {
+    top: 10px;
+  }
+
+  &:active {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.nav {
+  display: inline-block;
+  margin: 5px 5px;
+  
+  &__menu {
+    @include basic-flex();
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    color: white;
+    padding-left: 0;
+    width: 300px;
+
+    @media screen and (max-width: $width-mobile) {
+      display: none;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+
+      background-clip: content-box;
+      background-color: $background-color;
+      box-sizing: border-box;
+      height: 66.69vw;
+      position: absolute;
+      padding-top: 80px;
+      right: 0;
+      top: 0;
+      width: 120px;
+    }
+
+    &__item {
+      @media screen and (max-width: $width-mobile) {
+        font-size: 1.3rem;
+        margin-left: 3px;
+        padding: 4px 7px 4px 7px;
+      }
+      
+    }
+
+    &--expand {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+}
+
+.logo {
+  height: $header-height - 16px;
+  width: auto;
+  margin: auto 10px;
+
+  &__img {
+    background-image: url(/assets/VinCnoBACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 3px;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px;
+    }
+  }
+}

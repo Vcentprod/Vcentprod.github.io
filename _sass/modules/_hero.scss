@@ -1,0 +1,20 @@
+.parallax-hero {
+  position: relative;
+  height: 66.69vw;
+  width: 100%;
+  max-height: 683px;
+  margin: -$header-height 0 0 0;
+  z-index: -1;
+  
+  background: {
+    image: url(/assets/epicCOMIChandWLOGO.jpg);
+    size: contain;
+    position: top center;
+    attachment: fixed;   
+    repeat: no-repeat;
+  }
+  /* Fix the hero size in large windows*/
+  @media screen and (min-width: 1024px) {
+    background-size: 1024px auto;
+  }
+}
